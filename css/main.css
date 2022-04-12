@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&family=Nunito:ital,wght@0,400;0,700;0,800;1,500&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap");
+a {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: nunito;
+}
+
+.nav-section {
+  background: white;
+  padding: 1em;
+}
+
+.nav-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.nav-section .container .open-menu {
+  width: 2.6em;
+  cursor: pointer;
+}
+
+.nav-section .logo-section {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.nav-section .logo-section span {
+  color: #5aa9ff;
+  text-transform: lowercase;
+  font-size: 1.6em;
+}
+
+.nav-top {
+  display: none;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content .left-section h1 {
+  font-size: 3em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.hero-content .left-section p {
+  padding: 1em 2em 1em 2em;
+  line-height: 1.5em;
+}
+
+.hero-content .left-section .cta-section .learn-cta {
+  background: #0074f3;
+  padding: 1em 4.5em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  border-radius: 2em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.hero-content .left-section .cta-section .learn-cta:hover {
+  background: #5aa9ff;
+}
+
+.hero-content .left-section .cta-section .watch-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.hero-content .left-section .cta-section .watch-more .video-image {
+  width: 3em;
+  margin-right: 1.2em;
+}
+
+.hero-content .left-section .cta-section .watch-more a {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.list {
+  background: black;
+  color: white;
+}
+
+.list .list-container {
+  margin: 0;
+  padding-left: .1em;
+}
+
+.list .list-container li {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+.list .list-container li::before {
+  content: '';
+  left: -1.8em;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(/img/check.png);
+  background-size: contain;
+  margin-top: .1em;
+}
+
+.list img {
+  display: none;
+}
+
+.testimonial {
+  background: #0074f3;
+  color: white;
+}
+
+.testimonial ul li {
+  background: #005cc0;
+  text-align: center;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonial ul li img {
+  width: 6em;
+  height: 6em;
+  border: 5px solid #005cc0;
+  border-radius: 50%;
+}
+
+.contact .container-top h1 {
+  font-size: 2em;
+}
+
+.contact .container-top .form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.contact .container-top .form input, .contact .container-top .form textarea {
+  width: 100%;
+  padding: .8em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .container-top .form input[type="submit"] {
+  background: #0074f3;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 5em;
+  width: unset;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.contact .container-top .form input[type="submit"]:hover {
+  background: #005cc0;
+}
+
+.contact .container-below iframe {
+  width: 100%;
+  height: 80vh;
+  border-radius: 1em;
+}
+/*# sourceMappingURL=main.css.map */

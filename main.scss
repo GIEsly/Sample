@@ -1,0 +1,250 @@
+// Import Fonts from Google Fonts ------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&family=Nunito:ital,wght@0,400;0,700;0,800;1,500&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+
+// My Color Selections------------------------------------------------------
+$colors:(
+    navbarbg:#f2f2f2,
+    navbarwhite:white,
+    primary:#0074f3,
+    primary-lighten:lighten(#0074f3,20%),
+    primary-darken:darken(#0074f3,10%),
+);
+
+@function color($color-name){
+    @return map-get($colors,$color-name);
+}
+// -------------------------------------------------------------------------
+// Resetter Section: -------------------------------------
+a {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+// Resetter Section: -------------------------------------
+
+body {
+    background:color(navbarbg);
+    margin: 0;
+    font-family: nunito;
+}
+
+// Hero Section Area ------------------------------------------------------
+.nav-section {
+    background: color(navbarwhite);
+    padding: 1em;
+
+    .container {
+        display: flex;
+        place-content: space-between;
+
+        .open-menu {
+            width: 2.6em;
+            cursor: pointer;
+        }
+    }
+
+    .logo-section {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span {
+            color: color(primary-lighten);
+            text-transform: lowercase;
+            font-size: 1.6em;
+        }
+    }
+}
+
+.nav-top {
+    display: none;
+}
+
+.hero-content {
+    text-align: center;
+
+    .left-section {
+
+        h1 {
+            font-size: 3em;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+
+        p {
+            padding: 1em 2em 1em 2em;
+            line-height: 1.5em;
+        }
+
+        .cta-section {
+
+            .learn-cta {
+                background: color(primary);
+                padding: 1em 4.5em;
+                font-size: 1em;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+                border: 0;
+                border-radius: 2em;
+                margin-top: 1em;
+                cursor: pointer;
+
+                &:hover {
+                    background: color(primary-lighten);
+                }
+            }
+
+            .watch-more {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2em;
+                margin-bottom: 4em;
+
+                .video-image {
+                    width: 3em;
+                    margin-right: 1.2em;
+                }
+
+                a {
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+// Hero Section Area ------------------------------------------------------
+
+// List Section Area -----------------------------------------------------
+.list {
+    background: black;
+    color: white;
+
+    .list-container {
+        margin: 0;
+        padding-left: .1em;
+
+        li {
+            font-size: 1.3em;
+            margin-bottom: 1em;
+            margin-left: 2em;
+            position: relative;
+
+            &::before {
+                content: '';
+                left: -1.8em;
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background: url(/img/check.png);
+                background-size: contain;
+                margin-top: .1em;
+            }
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+// List Section Area -----------------------------------------------------
+
+// Testimonial Area -----------------------------------------------------
+.testimonial {
+    background: color(primary);
+    color: white;
+
+    ul {
+
+        li {
+
+            background: color(primary-darken);
+            text-align: center;
+            padding: 2em 1em;
+            margin: 0 auto 5em auto;
+            border-radius: 1em;
+
+            img {
+                width: 6em;
+                height: 6em;
+                border: 5px solid color(primary-darken);
+                border-radius: 50%;
+            }
+        }
+    }
+}
+// Testimonial Area -----------------------------------------------------
+
+//  Contact Section Area -----------------------------------------------
+.contact {
+
+   .container-top {
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .form {
+
+            label {
+                display: block;
+                font-size: 1.2em;
+                margin-bottom: .5em;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: .8em;
+                border-radius: .3em;
+                border: 1px solid gray;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                background: color(primary);
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+                border: none;
+                margin-bottom: 5em;
+                border-radius: 5em;
+                display: inline-block;
+                padding: .8em 5em;
+                width: unset;
+                margin-top: 2em;
+                cursor: pointer;
+
+                &:hover {
+                    background: color(primary-darken);
+                }
+            }
+        }
+   }
+
+   .container-below {
+
+    iframe {
+        width: 100%;
+        height: 80vh;
+        border-radius: 1em;
+    }
+   }
+}
+//  Contact Section Area -----------------------------------------------
+
+
+
+
